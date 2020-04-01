@@ -1,18 +1,72 @@
+/* defualt */
+/* * = 모든 태그 */
+*{
+    /* box-sizing: content-box; width가 콘텐츠만 가리킴*/
+    box-sizing: border-box;
+}
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+
+    margin: -1px;
+}
 .center{
     margin: 0 auto;
     width: 1080px;   /*console창에 screen.width  입력*/
 }
 
+
+
+/* selective */
+
+#header-seach a{
+    text-decoration: none;
+}
 #header-search h1{
-    width: 280px;
+    vertical-align: middle;
+        
+    width: 198px;
+    height: 48px;    
+    overflow: hidden;
     display: inline-block;
+      
+    background: url("./sp_search.svg") -4px -4px no-repeat;
+    text-indent: 100%;
 }
-
-#header-search h2{
-    display: none;
-}
-
 #header-search fieldset{
+    vertical-align: middle;
+
     width: 520px;
+    height: 49px;    
+    margin-left: 20px;
+    padding: 12px 0 12px 10px;
+    border: 2px solid #03cf5d;
+    display: inline-block;
+    
+}
+#header-search fieldset input{
+    border: none;
+    padding: 0;
+    outline: none;
+}
+#header-search fieldset button{
+    vertical-align: middle;
+      
+    width: 49px;
+    height: 49px;
+    border: none;
+    padding: 0;
+    background: #03cf5d ;
+}
+#search-image{    
+    width: 21px;
+    height: 21px;
+    margin: 14px;
+
+    background: url("./sp_search.svg") -3px -60px no-repeat;
     display: inline-block;
 }
