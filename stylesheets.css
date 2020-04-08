@@ -27,6 +27,29 @@
         header{
             height: 170px;
         }
+        .header-img{
+            background-image: url("./sp_search.svg");
+            background-repeat: no-repeat;
+
+            display: inline-block;
+        }
+        /*header-top 요소*/
+        #header-top{
+            float: right;
+        }
+        #header-top span{
+            line-height: 22px;
+            font-size: 11px;
+            letter-spacing: -1px;    /*자간*/
+            color: #888;           /*#888 = 888888*/
+        }
+        /*검색창 및 로고*/
+        #header-search{
+            clear: both;
+            position: relative;
+
+            padding-top: 15px;
+        }
         #header-seach a{
             text-decoration: none;
         }
@@ -38,9 +61,8 @@
             width: 198px;
             height: 48px;    
             overflow: hidden;
-            display: inline-block;
             
-            background: url("./sp_search.svg") -4px -4px no-repeat;
+            background-position: -4px -4px;
             text-indent: 100%;
         }
         #header-search fieldset{
@@ -64,6 +86,21 @@
             width: 405px;
             height: 23px;
         }
+        #search-keyboard{
+            width: 19px;
+            height: 11px;
+
+            background-position: -33px -60px;
+        }
+        #search-history{
+            width: 9px;
+            height: 4px;
+
+            background-position: -87px -60px;
+            position: absolute;
+            right: 56px;
+            top: 50%;
+        }
         #header-search fieldset button{
             vertical-align: middle;
             position: absolute;
@@ -81,20 +118,43 @@
             height: 21px;
             margin: 14px;
 
-            background: url("./sp_search.svg") -3px -60px no-repeat;
-            display: inline-block;
+            background-position:-3px -60px;
         }
 /* navigation 영역 */
         nav{
             height: 46px;
+            border-top: 1px solid #f1f3f6;
+            border-bottom: 1px solid #f1f3f6;;
+        }
+        #search-ranking{
+            float: right;
+
+            padding-top: 16px;
+        }
+        .rank-numbering{
+            margin-top: -9px;
+
+            color: #00ab33;
+            font-size: 16px;
         }
         nav ul{
+            float: left;
             margin: 0;
             padding: 0;
             list-style: none;/*글머리기호 스타일*/
         }
+        .nav-divider{
+            float: left;
+        }
+        #nav-green{
+            padding-left: 14px;
+        }
+        #nav-black{
+            padding-left: 4px;
+        }
         nav li{
             display: inline-block;
+            padding-top: 16px;
         }
         nav li span:last-child{
             margin-left: 14px;
@@ -167,11 +227,22 @@
         }
         #nav-webtoon{
             width: 27px;
-            background-position: -744px -260px;
+            background-position: -74px -260px;
         }
         #nav-more{
             width: 55px;
             background-position: 0 -130px;
         }
 /* main */
-
+        main{
+            background-color: #f2f4f7;
+            overflow: auto;
+        }
+        #main-right{
+            width: 740px;
+            float: right;
+        }
+        #main-left{
+            width: 332px;
+            float: left;
+        }

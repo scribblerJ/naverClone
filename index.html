@@ -9,48 +9,65 @@
 <body>
         <header>
                 <div class="center-align">
-                    <span>네이버를 시작페이지로</span>
-                    <span>쥬니어네이버</span>       
-                    <span>해피빈</span>                    
-                    <div id="header-search">
-                            <a href="https://www.naver.com"><h1>네이버</h1></a><!--a태그 =         attribute = 태그에 대한 부가 정보/속성      href = 주소를 알려주는 -->
-                            <h2 class="blind">검색창</h2>
-                            <fieldset>
-                                    <legend class="blind">검색</legend><!-- legend태그 = 범례 -->
-                                    <input />
-                                    <button>
-                                            <span class="blind">검색</span>
-                                            <span id="search-image"></span>
-                                    </button><!--    input   textarea    button  -->
-                            </fieldset>
-                    </div>
+                        <div id="header-top">
+                                <span>네이버를 시작페이지로 ></span>
+                                <span> | 쥬니어네이버</span>       
+                                <span>해피빈</span>                    
+                        </div>
+                        <div id="header-search">
+                                <a href="https://www.naver.com"><h1 class="header-img">네이버</h1></a><!--a태그 =         attribute = 태그에 대한 부가 정보/속성      href = 주소를 알려주는 -->
+                                <h2 class="blind">검색창</h2>
+                                <fieldset>
+                                        <legend class="blind">검색</legend><!-- legend태그 = 범례 -->
+                                        <input />
+                                        <span class="header-img" id="search-keyboard"><a href=""></a></span>
+                                        <span class="header-img" id="search-history"><a href=""></a></span>
+                                        <button>
+                                                <span class="blind">검색</span>
+                                                <span class="header-img" id="search-image"></span>
+                                        </button><!--    input   textarea    button  -->
+                                </fieldset>
+                        </div>
                 </div>
         </header>
         <nav>  
                 <div class="center-align">                
+                        
                         <ul><!-- ol = ordered list  ul = Unordered list li = list item  -->
-                                <li><a href=""><span class="blind">메일</span><span id="nav-mail"></span></a></li>
-                                <li><a href=""><span class="blind">카페</span><span id="nav-cafe"></span></a></li>
-                                <li><a href=""><span class="blind">블로그</span><span id="nav-blog"></span></a></li>
-                                <li><a href=""><span class="blind">지식인</span><span id="nav-JSIn"></span></a></li>
-                                <li><a href=""><span class="blind">쇼핑</span><span id="nav-shopping"></span></a></li>
-                                <li><a href=""><span class="blind">네이버페이</span><span id="nav-naverPay"></span></a></li>
-                                <li><a href=""><span class="blind">네이버TV</span><span id="nav-naverTv"></span></a></li>
-                                <li><a href=""><span class="blind">사전</span><span id="nav-dic"></span></a></li>
-                                <li><a href=""><span class="blind">뉴스</span><span id="nav-news"></span></a></li>
-                                <li><a href=""><span class="blind">증권</span><span id="nav-stock"></span></a></li>
-                                <li><a href=""><span class="blind">부동산</span><span id="nav-realEstate"></span></a></li>
-                                <li><a href=""><span class="blind">지도</span><span id="nav-map"></span></a></li>
-                                <li><a href=""><span class="blind">영화</span><span id="nav-movie"></span></a></li>
-                                <li><a href=""><span class="blind">뮤직</span><span id="nav-music"></span></a></li>
-                                <li><a href=""><span class="blind">책</span><span id="nav-book"></span></a></li>
-                                <li><a href=""><span class="blind">웹툰</span><span id="nav-webtoon"></span></a></li>
-                                <li><a href=""><span class="blind">더보기</span><span id="nav-more"></span></a></li>
-                        </ul>
-                </div>          
+                                <div class="nav-divider" id="nav-green">
+
+                                        <li><a href=""><span class="blind">메일</span><span id="nav-mail"></span></a></li>
+                                        <li><a href=""><span class="blind">카페</span><span id="nav-cafe"></span></a></li>
+                                        <li><a href=""><span class="blind">블로그</span><span id="nav-blog"></span></a></li>
+                                        <li><a href=""><span class="blind">지식인</span><span id="nav-JSIn"></span></a></li>
+                                        <li><a href=""><span class="blind">쇼핑</span><span id="nav-shopping"></span></a></li>
+                                        <li><a href=""><span class="blind">네이버페이</span><span id="nav-naverPay"></span></a></li>
+                                        <li><a href=""><span class="blind">네이버TV</span><span id="nav-naverTv"></span></a></li>
+                                </div>
+                                <div class="nav-divider" id="nav-black">
+                                        <li><a href=""><span class="blind">사전</span><span id="nav-dic"></span></a></li>
+                                        <li><a href=""><span class="blind">뉴스</span><span id="nav-news"></span></a></li>
+                                        <li><a href=""><span class="blind">증권</span><span id="nav-stock"></span></a></li>
+                                        <li><a href=""><span class="blind">부동산</span><span id="nav-realEstate"></span></a></li>
+                                        <li><a href=""><span class="blind">지도</span><span id="nav-map"></span></a></li>
+                                        <li><a href=""><span class="blind">영화</span><span id="nav-movie"></span></a></li>
+                                        <li><a href=""><span class="blind">뮤직</span><span id="nav-music"></span></a></li>
+                                        <li><a href=""><span class="blind">책</span><span id="nav-book"></span></a></li>
+                                        <li><a href=""><span class="blind">웹툰</span><span id="nav-webtoon"></span></a></li>
+                                </div>
+                                        <li><a href=""><span class="blind">더보기</span><span id="nav-more" class="nav-divider"></span></a></li>
+                                </ul>
+                        <div id="search-ranking">
+                                <h2 class="blind">실시간 검색어</h2>                        
+                               <div>
+                                       <span class="rank-numbering">1 </span><span> 실검 1위</span>
+                               </div>
+                        </div>
+                        
+                </div>
         </nav>
         <main>
-                <h2>실시간 검색어</h2>
+                
                 <ul>
                         <li>네이버 클론</li>
                         <li>웹프로그래밍</li>
