@@ -238,11 +238,3 @@
             background-color: #f2f4f7;
             overflow: auto;
         }
-        #main-right{
-            width: 740px;
-            float: right;
-        }
-        #main-left{
-            width: 332px;
-            float: left;
-        }
